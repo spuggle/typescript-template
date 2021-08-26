@@ -141,9 +141,7 @@
         "allowHigherOrderFunctions": true,
         "allowTypedFunctionExpressions": true
       }],
-      "@typescript-eslint/func-call-spacing": [ "error", "always", {
-        "allowNewlines": false
-      }],
+      "@typescript-eslint/func-call-spacing": [ "error", "never" ],
       "@typescript-eslint/indent": [ "error", 2, {
         "flatTernaryExpressions": false,
         "ignoredNodes": [],

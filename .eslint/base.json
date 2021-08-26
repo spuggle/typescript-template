@@ -115,6 +115,7 @@
     "eol-last": [ "error", "always" ],
     "eqeqeq": [ "error", "always" ],
     "for-direction": "error",
+    "func-call-spacing": [ "error", "never" ],
     "func-name-matching": [ "error", "always" ],
     "func-names": [ "error", "as-needed", {
       "generators": "as-needed"
