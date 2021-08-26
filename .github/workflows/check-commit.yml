@@ -13,17 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "lts/*"
-          cache: "pnpm"
-
       - name: Setup pnpm and dependencies
         uses: pnpm/action-setup@v2.0.1
         with:
           version: 6.0.2
           run_install: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "lts/*"
+          cache: "pnpm"
 
       - name: Lint Commit Message
         run: pnpm run lint check commit
