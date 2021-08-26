@@ -2,6 +2,7 @@
   "name": "typescript-template",
   "version": "0.1.0",
   "description": "My TypeScript starter template",
+  "private": true,
   "author": "spuggle",
   "license": "Apache-2.0",
   "homepage": "https://github.com/spuggle/typescript-template#readme",
@@ -18,29 +19,37 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "exec": "bash ./.scripts/run.sh",
-    "build": "npm run exec build",
-    "lint": "npm run exec pkgx eslint --fix src/",
+    "build": "ttsc",
+    "build:watch": "ttsc --pretty --sourceMap --watch",
+    "lint": "bash ./.scripts/lint.sh",
     "test": "echo 'Error: no test specified' && exit 1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "ttypescript": "^1.5.12"
+  },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
     "@types/node": "^16.6.1",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
     "eslint": "^7.32.0",
-    "eslint-plugin-jsdoc": "^36.0.7",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-unicorn": "^35.0.0",
+    "husky": "^7.0.2",
     "typescript": "^4.3.5"
   },
   "type": "commonjs",
-  "private": true,
   "engines": {
     "node": "14.x.x"
   },
+  "commitlint": {
+    "extends": [
+      "./.github/configs/commitlint.json"
+    ]
+  },
   "eslintConfig": {
-    "extends": "./.eslint/eslintrc-node.json",
+    "extends": "./.eslint/all.json",
     "root": true,
     "parserOptions": {
       "ecmaVersion": "2018"

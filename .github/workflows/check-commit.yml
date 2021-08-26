@@ -1,0 +1,37 @@
+name: Lint Commit
+on: [ pull_request ]
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  check:
+    name: Check commits
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "lts/*"
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+        
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Lint commit message
+        run: pnpm run lint check commit
+

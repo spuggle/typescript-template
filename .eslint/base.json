@@ -115,6 +115,7 @@
     "eol-last": [ "error", "always" ],
     "eqeqeq": [ "error", "always" ],
     "for-direction": "error",
+    "func-call-spacing": [ "error", "never" ],
     "func-name-matching": [ "error", "always" ],
     "func-names": [ "error", "as-needed", {
       "generators": "as-needed"
@@ -651,7 +652,7 @@
       "functions": "always",
       "keywords": "always"
     }],
-    "space-before-function-paren":[ "error", {
+    "space-before-function-paren": [ "error", {
       "anonymous": "never",
       "asyncArrow": "never",
       "named": "never"
@@ -684,7 +685,7 @@
     "symbol-description": "error",
     "template-curly-spacing": [ "error", "never" ],
     "template-tag-spacing": [ "error", "never" ],
-    "unicode-bom": [ "error", "always" ],
+    "unicode-bom": [ "error", "never" ],
     "use-isnan": [ "error", {
       "enforceForSwitchCase": true,
       "enforceForIndexOf": true
