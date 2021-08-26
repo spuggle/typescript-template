@@ -43,7 +43,7 @@
     "allowSyntheticDefaultImports": false,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "exactOptionalPropertyTypes": true,
+    // "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitOverride": true,
@@ -56,7 +56,7 @@
     "noUnusedParameters": true,
     "suppressImplicitAnyIndexErrors": false,
     "useDefineForClassFields": true,
-    "useUnknownInCatchVariables": true,
+    // "useUnknownInCatchVariables": true,
 
     "emitBOM": false,
     "forceConsistentCasingInFileNames": true,
