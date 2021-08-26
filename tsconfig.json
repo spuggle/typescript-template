@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "outDir": "./dist",
     "paths": {},
-    "rootDir": "./",
+    "rootDir": "./src",
     "target": "ES2018",
     // "tsBuildInfoFile": "./",
 
