@@ -2,6 +2,7 @@
   "name": "typescript-template",
   "version": "0.1.0",
   "description": "My TypeScript starter template",
+  "private": true,
   "author": "spuggle",
   "license": "Apache-2.0",
   "homepage": "https://github.com/spuggle/typescript-template#readme",
@@ -34,8 +35,7 @@
     "eslint-plugin-unicorn": "^35.0.0",
     "typescript": "^4.3.5"
   },
-  "type": "commonjs",
-  "private": true,
+  "type": "module",
   "engines": {
     "node": "14.x.x"
   },
