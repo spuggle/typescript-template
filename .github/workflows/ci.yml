@@ -1,0 +1,62 @@
+name: CI
+on: [ push, pull_request ]
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: Build project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "lts/*"
+          cache: "pnpm"
+
+      - name: Setup pnpm and dependencies
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.0.2
+          run_install: true
+
+      - name: Compile project
+        run: pnpm run build
+
+      - name: Upload Compiled TypeScript
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: |
+            dist/
+            !dist/**/*.map.*
+          retention-days: 7
+
+  lint:
+    name: Lint project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "lts/*"
+          cache: "pnpm"
+
+      - name: Setup pnpm and dependencies
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.0.2
+          run_install: true
+
+      - name: Run linter
+        run: pnpm run lint:check
+
