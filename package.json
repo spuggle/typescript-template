@@ -19,9 +19,9 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "exec": "bash ./.scripts/run.sh",
-    "build": "npm run exec build",
-    "lint": "npm run exec pkgx eslint --fix src/",
+    "build": "tsc",
+    "build:watch": "tsc --pretty --sourceMap --watch",
+    "lint": "bash ./.scripts/lint.sh",
     "test": "echo 'Error: no test specified' && exit 1"
   },
   "dependencies": {},
