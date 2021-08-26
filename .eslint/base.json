@@ -684,7 +684,7 @@
     "symbol-description": "error",
     "template-curly-spacing": [ "error", "never" ],
     "template-tag-spacing": [ "error", "never" ],
-    "unicode-bom": [ "error", "always" ],
+    "unicode-bom": [ "error", "never" ],
     "use-isnan": [ "error", {
       "enforceForSwitchCase": true,
       "enforceForIndexOf": true
