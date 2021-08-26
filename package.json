@@ -39,6 +39,11 @@
   "engines": {
     "node": "14.x.x"
   },
+  "commitlint": {
+    "extends": [
+      "./.github/configs/commitlint.json"
+    ]
+  },
   "eslintConfig": {
     "extends": "./.eslint/eslintrc-node.json",
     "root": true,
