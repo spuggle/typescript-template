@@ -13,17 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Setup pnpm and dependencies
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.0.2
-          run_install: true
-
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: "lts/*"
           cache: "pnpm"
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install Dependencies with pnpm
+        run: pnpm install
 
       - name: Compile project
         run: pnpm run build
@@ -45,17 +45,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Setup pnpm and dependencies
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.0.2
-          run_install: true
-
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: "lts/*"
           cache: "pnpm"
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install Dependencies with pnpm
+        run: pnpm install
 
       - name: Run linter
         run: pnpm run lint:check
