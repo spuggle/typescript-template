@@ -651,7 +651,7 @@
       "functions": "always",
       "keywords": "always"
     }],
-    "space-before-function-paren":[ "error", {
+    "space-before-function-paren": [ "error", {
       "anonymous": "never",
       "asyncArrow": "never",
       "named": "never"
