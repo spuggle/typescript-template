@@ -9,7 +9,7 @@
     "target": "ES2018",
     // "tsBuildInfoFile": "./",
 
-    "checkJs": true,
+    "checkJs": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": [],
