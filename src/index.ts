@@ -1,6 +1,6 @@
-﻿import { add } from "./utils/add";
+import { addIntegers } from "utils/addIntegers";
 
-const doubleDateNow = add(Date.now(), Date.now());
+const doubleDateNow = addIntegers(Date.now(), Date.now());
 
 console.log(doubleDateNow);
 
