@@ -22,9 +22,17 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
-      - name: Install Dependencies with pnpm
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+        
+      - name: Install dependencies
         run: pnpm install
 
-      - name: Lint Commit Message
+      - name: Lint commit message
         run: pnpm run lint check commit
 

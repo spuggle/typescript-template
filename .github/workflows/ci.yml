@@ -17,18 +17,25 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "lts/*"
-          cache: "pnpm"
 
       - name: Install pnpm
         run: npm install -g pnpm
 
-      - name: Install Dependencies with pnpm
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Install dependencies
         run: pnpm install
 
       - name: Compile project
         run: pnpm run build
 
-      - name: Upload Compiled TypeScript
+      - name: Upload compiled files
         uses: actions/upload-artifact@v2
         with:
           name: dist
@@ -54,7 +61,15 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
-      - name: Install Dependencies with pnpm
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Install dependencies
         run: pnpm install
 
       - name: Run linter
