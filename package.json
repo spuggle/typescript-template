@@ -45,7 +45,7 @@
     ]
   },
   "eslintConfig": {
-    "extends": "./.eslint/eslintrc-node.json",
+    "extends": "./.eslint/all.json",
     "root": true,
     "parserOptions": {
       "ecmaVersion": "2018"
