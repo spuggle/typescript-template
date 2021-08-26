@@ -19,12 +19,15 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --pretty --sourceMap --watch",
+    "build": "ttsc",
+    "build:watch": "ttsc --pretty --sourceMap --watch",
     "lint": "bash ./.scripts/lint.sh",
     "test": "echo 'Error: no test specified' && exit 1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "ttypescript": "^1.5.12"
+  },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@types/node": "^16.6.1",

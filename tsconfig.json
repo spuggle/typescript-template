@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
     "module": "CommonJS",
     "moduleResolution": "node",
     "outDir": "./dist",
-    "paths": {},
     "rootDir": "./src",
     "target": "ES2018",
-    // "tsBuildInfoFile": "./",
+
+    "baseUrl": "./src",
+    "paths": {
+      "@utils/*": [ "utils/*" ]
+    },
+    "plugins": [{
+      "transform": "@zerollup/ts-transform-paths",
+      "exclude": ["*"]
+    }],
 
     "checkJs": false,
     "emitDecoratorMetadata": true,
@@ -43,7 +49,6 @@
     "allowSyntheticDefaultImports": false,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    // "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitOverride": true,
@@ -56,7 +61,6 @@
     "noUnusedParameters": true,
     "suppressImplicitAnyIndexErrors": false,
     "useDefineForClassFields": true,
-    // "useUnknownInCatchVariables": true,
 
     "emitBOM": false,
     "forceConsistentCasingInFileNames": true,

@@ -1,4 +1,4 @@
-import { addIntegers } from "utils/addIntegers";
+import { addIntegers } from "@utils/addIntegers";
 
 const doubleDateNow = addIntegers(Date.now(), Date.now());
 
