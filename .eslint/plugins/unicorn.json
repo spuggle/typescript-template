@@ -62,7 +62,6 @@
     "unicorn/no-for-loop": "error",
     "unicorn/no-hex-escape": "error",
     "unicorn/no-instanceof-array": "error",
-    "unicorn/no-invalid-remove-event-listener": "error",
     "unicorn/no-keyword-prefix": [ "error", {
       "checkProperties": true,
       "disallowedPrefixes": [ "new", "class" ],
@@ -82,7 +81,6 @@
     "unicorn/no-unreadable-array-destructuring": "error",
     "unicorn/no-unsafe-regex": "error",
     "unicorn/no-unused-properties": "error",
-    "unicorn/no-useless-fallback-in-spread": "error",
     "unicorn/no-useless-length-check": "error",
     "unicorn/no-useless-spread": "error",
     "unicorn/no-useless-undefined":[ "error", {
