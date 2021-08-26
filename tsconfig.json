@@ -15,7 +15,7 @@
     "lib": [],
 
     "composite": true,
-    "declaration": false,
+    "declaration": true,
     "declarationMap": false,
     "noEmit": false,
     "noEmitHelpers": false,
