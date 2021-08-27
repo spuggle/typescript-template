@@ -6,8 +6,13 @@ on:
       - main
     paths:
       - .github/configs/labels.yml
+
+permissions:
+  contents: write
+  statuses: write
+
 jobs:
-  build:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
