@@ -1,11 +1,12 @@
 # TypeScript Template
 A template repository for my TypeScript projects using Node.js. Any code present in this repository is purely for demonstrative, explanatory and testing purposes.
 
-Report a Bug | Request a Feature
+<span align="center">[Report a Bug](/issues/new?assignees=&labels=Bug%2CInvestigation+required&template=bug_report.yml) | [Request a Feature](/issues/new?assignees=&labels=Type%3A+Feature&template=feature-suggestion.yml)</span>
 
 ![GitHub issues](https://img.shields.io/github/issues-raw/spuggle/typescript-template?style=for-the-badge) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/spuggle/typescript-template?style=for-the-badge) ![Discussions](https://img.shields.io/github/discussions/spuggle/typescript-template?style=for-the-badge)
-![Version](https://img.shields.io/github/package-json/version/spuggle/typescript-template?style=flat-square) ![Status](https://img.shields.io/github/workflow/status/spuggle/typescript-starter/testing/main?style=flat-square)
-![Last Commit](https://img.shields.io/github/last-commit/spuggle/typescript-template/main?style=flat-square) ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)
+
+![Status](https://img.shields.io/github/workflow/status/spuggle/typescript-starter/testing/main?style=flat-square) ![Last Commit](https://img.shields.io/github/last-commit/spuggle/typescript-template/main?style=flat-square) ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)
+
 ![Licence](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)
 
 ## ✨ Getting Started
@@ -70,5 +71,5 @@ For more details, see [CONTRIBUTING.md](.github/CONTRIBUTING.md)
 ## 👣 Support
 Please ⭐️ this repository if you found it interesting or helpful!
 
-## 📝 Licensing
-This project is licenced under the [Apache-2.0 licence](http://www.apache.org/licenses/LICENSE-2.0). For more details, see [LICENCE](LICENCE)
+## 📝 Licencing
+This project is licenced under the [Apache-2.0 licence](http://www.apache.org/licenses/LICENSE-2.0). For more details, see [LICENCE](LICENSE)
