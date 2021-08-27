@@ -1,7 +1,7 @@
 # TypeScript Template
 A template repository for my TypeScript projects using Node.js. Any code present in this repository is purely for demonstrative, explanatory and testing purposes.
 
-<div align="center">[Report a Bug](https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Bug%2CInvestigation+required&template=bug_report.yml) | [Request a Feature](https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Type%3A+Feature&template=feature-suggestion.yml)</div>
+<div align="center"><a href="https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Bug%2CInvestigation+required&template=bug_report.yml">Report a Bug</a> | <a href="https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Type%3A+Feature&template=feature-suggestion.yml">Request a Feature</a></div>
 
 ![GitHub issues](https://img.shields.io/github/issues-raw/spuggle/typescript-template?style=for-the-badge) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/spuggle/typescript-template?style=for-the-badge) ![Discussions](https://img.shields.io/github/discussions/spuggle/typescript-template?style=for-the-badge)
 
