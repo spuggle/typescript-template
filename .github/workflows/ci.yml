@@ -72,5 +72,5 @@ jobs:
         run: pnpm install
 
       - name: Run linter
-        run: pnpm run lint check source
+        run: pnpm run lint
 

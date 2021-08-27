@@ -33,5 +33,5 @@ jobs:
         run: pnpm install
 
       - name: Lint commit message
-        run: pnpm run lint check commit
+        run: pnpm run lint:commit
 

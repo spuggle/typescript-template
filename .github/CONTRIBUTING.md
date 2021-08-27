@@ -92,19 +92,22 @@ Fixes <issue tag>
 ### Versioning
 This project follows [Semantic Versioning](http://semver.org/). The versioning process is automated, and you don't need to know anything about it to be able to contribute — other than the fact that following our [commit message conventions](#commit-messages) helps make this process easier.
 
+### Pull Requests and Merging
+
+
 
 ## General Contribution
 You can contribute to this project in multiple ways. This section explains how you can perform some quick contributions. For further contribution, see our [repository workflow](#repository-workflow).
 
 ### Requesting Features
-To be able to improve this project the way our users want, we're open to feature and enhancement suggestions at all times. [Go ahead and suggest](/) what you would like to see added to the project!
+To be able to improve this project the way our users want, we're open to feature and enhancement suggestions at all times. [Go ahead and suggest](https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Type%3A+Feature&template=feature-suggestion.yml) what you would like to see added to the project!
 
 We've set up a template to help you with providing us relevant information about your suggestion. You may include any additional points that you feel are relevant to the suggestion.
 
 #### Working on the Feature
-If you want to work on the suggestion too, you may [fork this repository](/) to start making changes, and then create a pull request to the `next` branch once you're ready to submit the contributions. Make sure to mention forking the repository or even possibly linking your suggestion issue to your fork, so that others know that you're working on it, and maybe even help you with the contributions.
+If you want to work on the suggestion too, you may fork this repository to start making changes, and then create a pull request to the `next` branch once you're ready to submit the contributions. Make sure to mention forking the repository or even possibly linking your suggestion issue to your fork, so that others know that you're working on it, and maybe even help you with the contributions.
 
-You should expect your suggested feature to ship with the next non-hotfix release of the project. To see the progress of any ongoing development, see [milestones](/) — or if you want to know the inner workings of this repository, see our [repository workflow](#repository-workflow).
+You should expect your suggested feature to ship with the next non-hotfix release of the project. To see the progress of any ongoing development, see [projects](https://github.com/spuggle/typescript-template/projects) — or if you want to know the inner workings of this repository, see our [repository workflow](#repository-workflow).
 
 ### Reporting Bugs
 It is very likely for bugs to end up in the production release of the project, and a user may encounter that bug whilst using the project. To provide a great user experience, we act immediately to fix any bugs as soon as possible.
@@ -127,12 +130,12 @@ You will need to tell us the steps we need to follow in order for us to reproduc
 You may also be asked to provide more details — such as about your environment, or the content of select configuration files and debug logs.
 
 #### Opening an Issue
-At this point, it is becoming clear that the cause of your issue may be because of a bug in the project after all. You may have been guided to open an issue regarding your problem. If not, you may [create one yourself](/).
+At this point, it is becoming clear that the cause of your issue may be because of a bug in the project after all. You may have been guided to open an issue regarding your problem. If not, you may [create one yourself](https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Bug%2CInvestigation+required&template=bug_report.yml).
 
 We've set up a template that serves as a guide for you to provide us with relevant information about the issue you're having. You may also mention points that aren't asked in the template, which you feel may be relevant to the situation. You may also refer to any discussions you've had regarding the problem.
 
 #### Working on the Issue
-If you want to work on the hotfix too, you may [fork this repository](/) to start making changes, and then create a pull request to the `main` branch once you're ready to submit the contributions. You **MUST** link your bug report issue to your fork, so that we can keep track of its progress, and maybe even help you with patching it up. Any delays or inactivity in the patching process of the hotfix may result in transfer of responsibilities.
+If you want to work on the hotfix too, you may fork this repository to start making changes, and then create a pull request to the `main` branch once you're ready to submit the contributions. You **MUST** link your bug report issue to your fork, so that we can keep track of its progress, and maybe even help you with patching it up. Any delays or inactivity in the patching process of the hotfix may result in transfer of responsibilities.
 
 
 ## Repository Workflow

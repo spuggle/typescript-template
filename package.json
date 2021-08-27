@@ -21,7 +21,9 @@
   "scripts": {
     "build": "ttsc",
     "build:watch": "ttsc --pretty --sourceMap --watch",
-    "lint": "bash ./.scripts/lint.sh",
+    "lint": "eslint src/",
+    "lint:commit": "git log -1 --pretty=format:'%B' | commitlint",
+    "lint:fix": "eslint --fix src/",
     "test": "echo 'Error: no test specified' && exit 1"
   },
   "dependencies": {
