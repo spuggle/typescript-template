@@ -1,7 +1,7 @@
 # TypeScript Template
 A template repository for my TypeScript projects using Node.js. Any code present in this repository is purely for demonstrative, explanatory and testing purposes.
 
-<span align="center">[Report a Bug](/issues/new?assignees=&labels=Bug%2CInvestigation+required&template=bug_report.yml) | [Request a Feature](/issues/new?assignees=&labels=Type%3A+Feature&template=feature-suggestion.yml)</span>
+<div align="center">[Report a Bug](https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Bug%2CInvestigation+required&template=bug_report.yml) | [Request a Feature](https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Type%3A+Feature&template=feature-suggestion.yml)</div>
 
 ![GitHub issues](https://img.shields.io/github/issues-raw/spuggle/typescript-template?style=for-the-badge) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/spuggle/typescript-template?style=for-the-badge) ![Discussions](https://img.shields.io/github/discussions/spuggle/typescript-template?style=for-the-badge)
 
@@ -32,8 +32,7 @@ Select this repository as a template when creating a new repository.
 See [DEVELOPING](.github/DEVELOPING.md) for more details.
 
 #### Node.js
-This project requires Node.js version 14 or:q
-16 to be used, and is configured to work with version 16.
+This project requires Node.js version 14 or 16 to be used, and is configured to work with version 16.
 
 #### Package Manager
 This project uses [pnpm](https://pnpm.io/) as the default Node.js package manager.
