@@ -50,8 +50,11 @@
   "eslintConfig": {
     "extends": "./.eslint/all.json",
     "root": true,
+    "env": {
+      "es6": true
+    },
     "parserOptions": {
-      "ecmaVersion": "2018"
+      "ecmaVersion": 2021
     }
   }
 }
