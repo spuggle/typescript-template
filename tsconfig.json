@@ -11,8 +11,7 @@
       "@utils/*": [ "utils/*" ]
     },
     "plugins": [{
-      "transform": "@zerollup/ts-transform-paths",
-      "exclude": ["*"]
+      "transform": "typescript-transform-paths"
     }],
 
     "checkJs": false,
