@@ -68,7 +68,11 @@
     "jsx": "preserve",
     "newLine": "LF",
     "preserveConstEnums": true,
-    "removeComments": true
+    "removeComments": true,
+
+    "useUnknownInCatchVariables": true,
+    "pretty": true,
+    "exactOptionalPropertyTypes": true
   },
   "include": [ "./src/**/*", "./tests/**/*" ]
 }
