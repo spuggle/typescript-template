@@ -17,7 +17,7 @@
     }],
     "array-bracket-newline": [ "error", {
       "multiline": true,
-      "minItems": 4
+      "minItems": 5
     }],
     "array-bracket-spacing": [ "error", "always", {
       "singleValue": true,
@@ -28,13 +28,13 @@
       "allowImplicit": false,
       "checkForEach": false
     }],
-    "array-element-newline": [ "error", {
+    "array-element-newline": [ "off", {
         "ArrayExpression": {
-          "minItems": 3,
+          "minItems": 5,
           "multiline": true
         },
         "ArrayPattern": {
-          "minItems": 3,
+          "minItems": 5,
           "multiline": true
         }
     }],
@@ -101,7 +101,7 @@
     }],
     "consistent-this": [ "error", "self" ],
     "constructor-super": "error",
-    "curly": [ "error", "all" ],
+    "curly": [ "error", "multi" ],
     "default-case": [ "error", {
       "commentPattern": "^no\\sdefault"
     }],
@@ -109,8 +109,8 @@
     "default-param-last": "error",
     "dot-location": [ "error", "property" ],
     "dot-notation": [ "error", {
-      "allowKeywords": false,
-      "allowPattern": "^$"
+      "allowKeywords": true,
+      "allowPattern": "^delete$"
     }],
     "eol-last": [ "error", "always" ],
     "eqeqeq": [ "error", "always" ],
@@ -124,9 +124,7 @@
       "allowArrowFunctions": true
     }],
     "function-call-argument-newline": [ "error", "consistent" ],
-    "function-paren-newline": [ "error", {
-      "minItems": 4
-    }],
+    "function-paren-newline": [ "error", "multiline-arguments" ],
     "generator-star-spacing": [ "error", {
       "before": true,
       "after": false,
@@ -144,8 +142,8 @@
     "id-length": [ "error", {
       "min": 4,
       "properties": "always",
-      "exceptions": [],
-      "exceptionPatterns": []
+      "exceptions": [ ],
+      "exceptionPatterns": [ "_*" ]
     }],
     "id-match": "off",
     "implicit-arrow-linebreak": [ "error", "beside" ],
@@ -179,7 +177,6 @@
     }],
     "jsx-quotes": [ "error", "prefer-double" ],
     "key-spacing": [ "error", {
-      "align": {},
       "afterColon": true,
       "beforeColon": false,
       "mode": "strict"
@@ -212,18 +209,18 @@
       "allowObjectEnd": false
     }],
     "lines-between-class-members": [ "error", "always", {
-      "exceptAfterSingleLine": false
+      "exceptAfterSingleLine": true
     }],
     "max-classes-per-file": [ "error", 3 ],
     "max-depth": [ "error", 4 ],
     "max-len": [ "error", {
-      "code": 80,
-      "comments": 80,
+      "code": 120,
+      "comments": 120,
       "tabWidth": 2,
       "ignoreComments": false,
       "ignoreRegExpLiterals": false,
-      "ignoreStrings": false,
-      "ignoreTemplateLiterals": false,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
       "ignoreTrailingComments": false,
       "ignoreUrls": true,
       "ignorePattern": "^$"
@@ -258,10 +255,10 @@
       "properties": true
     }],
     "new-parens": [ "error", "always" ],
-    "newline-after-var": [ "error", "always" ],
+    "newline-after-var": [ "off", "always" ],
     "newline-before-return": "error",
     "newline-per-chained-call": [ "error", { 
-      "ignoreChainWithDepth": 1
+      "ignoreChainWithDepth": 2
     }],
     "no-alert": "error",
     "no-array-constructor": "error",
@@ -374,7 +371,7 @@
     "no-lonely-if": "error",
     "no-loop-func": "error",
     "no-loss-of-precision": "error",
-    "no-magic-numbers": [ "error", {
+    "no-magic-numbers": [ "off", {
       "detectObjects": false,
       "enforceConst": true,
       "ignore": [],
@@ -402,7 +399,7 @@
     }],
     "no-multi-str": "error",
     "no-multiple-empty-lines": [ "error", {
-      "max": 2,
+      "max": 1,
       "maxBOF": 0,
       "maxEOF": 1
     }],
@@ -455,7 +452,8 @@
     "no-shadow": [ "error", {
       "allow": [],
       "builtinGlobals": true,
-      "hoist": "all"
+      "hoist": "all",
+      "ignoreOnInitialization": false
     }],
     "no-shadow-restricted-names": "error",
     "no-sparse-arrays": "error",
@@ -504,6 +502,7 @@
       "enforceForJSX": true
     }],
     "no-unused-labels": "error",
+    "no-unused-private-class-members": "error",
     "no-unused-vars": [ "error", {
       "args": "all",
       "argsIgnorePattern": "^_",
@@ -546,11 +545,11 @@
     }],
     "object-curly-newline": [ "error", {
       "ObjectExpression": {
-        "minProperties": 3,
+        "minProperties": 4,
         "multiline": true
       },
       "ObjectPattern": {
-        "minProperties": 3,
+        "minProperties": 4,
         "multiline": true
       },
       "ImportDeclaration": {
@@ -567,7 +566,7 @@
       "objectsInObjects": true
     }],
     "object-property-newline": [ "error", {
-      "allowAllPropertiesOnSameLine": false
+      "allowAllPropertiesOnSameLine": true
     }],
     "object-shorthand": [ "error", "always", {
       "avoidQuotes": false,
@@ -583,7 +582,43 @@
     "padded-blocks": [ "error", "never", {
       "allowSingleLineBlocks": false
     }],
-    "padding-line-between-statements": "off",
+    "padding-line-between-statements": [ "error", {
+      "blankLine": "always",
+      "prev": [ "const", "let", "var" ],
+      "next": "*"
+    }, {
+      "blankLine": "always",
+      "prev": "*",
+      "next": [ "const", "let", "var" ]
+    }, {
+      "blankLine": "any",
+      "prev": [ "const", "let", "var" ],
+      "next": [ "const", "let", "var" ]
+    }, {
+      "blankLine": "always",
+      "prev": "if",
+      "next": "*"
+    }, {
+      "blankLine": "always",
+      "prev": "*",
+      "next": "if"
+    }, {
+      "blankLine": "never",
+      "prev": "if",
+      "next": "if"
+    }, {
+      "blankLine": "never",
+      "prev": [ "singleline-const", "singleline-let", "singleline-var" ],
+      "next": [ "if", "expression" ]
+    }, {
+      "blankLine": "always",
+      "prev": [ "singleline-const", "singleline-let", "singleline-var" ],
+      "next": [ "multiline-const", "multiline-let", "multiline-var" ]
+    }, {
+      "blankLine": "never",
+      "prev": "function",
+      "next": [ "const", "let", "var" ]
+    }],
     "prefer-arrow-callback": [ "error", {
       "allowNamedFunctions": false,
       "allowUnboundThis": true
@@ -607,6 +642,7 @@
     "prefer-exponentiation-operator": "error",
     "prefer-named-capture-group": "error",
     "prefer-numeric-literals": "error",
+    "prefer-object-has-own": "error",
     "prefer-object-spread": "error",
     "prefer-promise-reject-errors": [ "error", {
       "allowEmptyReject": false
