@@ -6,6 +6,7 @@ A template repository for my TypeScript projects using Node.js. Any code present
 <div align="center"><a href="https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Bug%2CInvestigation+required&template=bug_report.yml">Report a Bug</a> | <a href="https://github.com/spuggle/typescript-template/issues/new?assignees=&labels=Type%3A+Feature&template=feature-suggestion.yml">Request a Feature</a>
 
 <br />
+<br />
 
 ![GitHub issues](https://img.shields.io/github/issues-raw/spuggle/typescript-template?style=for-the-badge) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/spuggle/typescript-template?style=for-the-badge) ![Discussions](https://img.shields.io/github/discussions/spuggle/typescript-template?style=for-the-badge)
 
@@ -50,17 +51,11 @@ To build the project, run the following command:
 pnpm run build
 ```
 
-<br />
-
 ## 🗺 **Roadmap**
 There is no active roadmap as of now.
 
-<br />
-
 ## 👥 **Getting Help**
 There is no form of support set up for this repository at the moment.
-
-<br />
 
 ## 🤝 **Contributing**
 Thank you for considering contributing to this repository! All types of contributions are welcomed.
@@ -69,12 +64,8 @@ You should first create an issue to discuss your intended contributions. Issue a
 
 For more details, see [CONTRIBUTING.md](.github/CONTRIBUTING.md)
 
-<br />
-
 ## 👣 **Support**
 Please ⭐️ this repository if you found it interesting or helpful!
-
-<br />
 
 ## 📝 **Licencing**
 This project is licenced under the [Apache-2.0 licence](http://www.apache.org/licenses/LICENSE-2.0). For more details, see [LICENCE](LICENSE)
