@@ -74,5 +74,5 @@
     "pretty": true,
     "exactOptionalPropertyTypes": true
   },
-  "include": [ "./src/**/*", "./tests/**/*" ]
+  "include": [ "./src", "./tests" ]
 }
