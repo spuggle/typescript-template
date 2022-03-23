@@ -3,7 +3,7 @@
     "body-case": [ 2, "always", "sentence-case" ],
     "body-full-stop": [ 2, "never", "." ],
     "body-leading-blank": [ 2, "always" ],
-    "body-empty": [ 2, "never" ],
+    "body-empty": [ 0, "never" ],
     "body-max-length": [ 2, "always", 720 ],
     "body-max-line-length": [ 2, "always", 72 ],
     "body-min-length": [ 2, "always", 10 ],
