@@ -18,9 +18,7 @@
     "header-min-length": [ 2, "always", 20 ],
     "references-empty": [ 0 ],
     "scope-enum": [ 2, "always", [
-      "core", "compiler", "router", "http", "server",
-      "api", "git", "deps", "env", "workflow", "lint",
-      "script", "repo", "npm"
+      "compiler", "git", "deps", "lint", "scripts", "repo", "src"
     ] ],
     "scope-case": [ 2, "always", "kebab-case" ],
     "scope-empty": [ 0 ],
