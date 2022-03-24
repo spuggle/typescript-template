@@ -3,7 +3,7 @@ on:
   push:
     # Avoid multiple runs because release.yml workflow calls this workflow on push to main
     branches_ignore:
-      - test-release
+      - main
   workflow_call:
 defaults:
   run:

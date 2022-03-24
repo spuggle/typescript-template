@@ -1,8 +1,8 @@
-name: Reuse
+name: Release
 on:
   push:
     branches:
-      - test-release
+      - main
 
 jobs:
   ci:
@@ -17,8 +17,8 @@ jobs:
       contents: read
       security-events: write
 
-  reuse:
-    name: Reuse Workflows
+  release:
+    name: Make a Release
     needs: [ ci, analyze ]
     runs-on: ubuntu-latest
     steps:
