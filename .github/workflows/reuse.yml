@@ -22,13 +22,31 @@ jobs:
     needs: [ ci, analyze ]
     runs-on: ubuntu-latest
     steps:
-      - name: Test run
-        run: echo "This is a test run"
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Download compiled files
         uses: actions/download-artifact@v3
         with:
           name: dist
-          
-      - name: List downloaded files
-        run: ls -R
+
+      - name: Prepare pnpm
+        uses: pnpm/action-setup@v2.1.0
+        with:
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpx semantic-release

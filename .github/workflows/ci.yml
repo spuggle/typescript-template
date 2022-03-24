@@ -40,6 +40,10 @@ jobs:
         with:
           name: dist
           path: |
+            .gitignore
+            package.json
+            package-lock.json
+            pnpm-lock.yaml
             dist/
             !dist/**/*.map.*
           retention-days: 7
