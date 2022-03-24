@@ -1,0 +1,30 @@
+name: Reuse
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    name: CI
+    uses: ./.github/workflows/ci.yml
+
+  analyze:
+    name: Analyze
+    uses: ./.github/workflows/codeql-analysis.yml
+
+  reuse:
+    name: Reuse Workflows
+    needs: [ ci, analyze ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test run
+        run: echo "This is a test run"
+
+      - name: Download compiled files
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          
+      - name: List downloaded files
+        run: ls -R
