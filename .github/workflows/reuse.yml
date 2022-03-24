@@ -2,7 +2,7 @@ name: Reuse
 on:
   push:
     branches:
-      - main
+      - test-release
 
 jobs:
   ci:
