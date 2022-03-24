@@ -12,6 +12,10 @@ jobs:
   analyze:
     name: Analyze
     uses: ./.github/workflows/codeql-analysis.yml
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
 
   reuse:
     name: Reuse Workflows
